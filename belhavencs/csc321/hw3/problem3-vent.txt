@@ -1,0 +1,44 @@
+## Server not started
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      10/sshd             
+tcp        0      0 127.0.0.11:36887        0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      10/sshd
+```
+
+## Worker not connected
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:5557            0.0.0.0:*               LISTEN      19/python           
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      10/sshd             
+tcp        0      0 127.0.0.11:42953        0.0.0.0:*               LISTEN      -                   
+tcp        0      0 172.23.0.3:41302        172.23.0.4:5558         ESTABLISHED 19/python           
+tcp6       0      0 :::22                   :::*                    LISTEN      10/sshd     
+```
+
+## Worker connected
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:5558            0.0.0.0:*               LISTEN      19/python           
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      10/sshd             
+tcp        0      0 127.0.0.11:41649        0.0.0.0:*               LISTEN      -                   
+tcp        0      0 172.23.0.4:5558         172.23.0.3:41302        ESTABLISHED 19/python           
+tcp        0      0 172.23.0.4:5558         172.23.0.2:43706        ESTABLISHED 19/python           
+tcp6       0      0 :::22                   :::*                    LISTEN      10/sshd 
+```
+
+## Server down
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      10/sshd             
+tcp        0      0 127.0.0.11:36887        0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      10/sshd
+```

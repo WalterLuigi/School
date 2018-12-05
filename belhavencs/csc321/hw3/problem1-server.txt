@@ -1,0 +1,42 @@
+## No services
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.11:45025        0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      9/sshd              
+tcp6       0      0 :::22                   :::*                    LISTEN      9/sshd
+```
+
+## Server running
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.11:45025        0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:5555            0.0.0.0:*               LISTEN      59/python           
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      9/sshd              
+tcp6       0      0 :::22                   :::*                    LISTEN      9/sshd
+```
+
+## Connections in place
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.11:45025        0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:5555            0.0.0.0:*               LISTEN      59/python           
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      9/sshd              
+tcp        0      0 172.25.0.2:5555         172.25.0.4:51572        ESTABLISHED 59/python           
+tcp6       0      0 :::22                   :::*                    LISTEN      9/sshd 
+```
+
+## Server down
+
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.11:45025        0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      9/sshd              
+tcp6       0      0 :::22                   :::*                    LISTEN      9/sshd
+```

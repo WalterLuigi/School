@@ -1,0 +1,12 @@
+# IPython log file
+
+# Mon, 05 Nov 2018 13:22:06
+import ipaddress
+# Mon, 05 Nov 2018 13:22:39
+ipaddress.ip_address('192.0.2.1')
+#[Out]# IPv4Address('192.0.2.1')
+# Mon, 05 Nov 2018 13:23:00
+ipaddress.ip_address('2001:DB8::1')
+#[Out]# IPv6Address('2001:db8::1')
+# Mon, 05 Nov 2018 13:23:14
+exit()

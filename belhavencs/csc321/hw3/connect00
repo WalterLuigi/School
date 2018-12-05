@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+docker-compose exec node00 /bin/bash
