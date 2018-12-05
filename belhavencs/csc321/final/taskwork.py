@@ -16,11 +16,11 @@ context = zmq.Context()
 
 # Socket to receive messages on
 receiver = context.socket(zmq.PULL)
-receiver.connect("tcp://node01:5557")
+receiver.connect("tcp://node01:7007")
 
 # Socket to send messages to
 sender = context.socket(zmq.PUSH)
-sender.connect("tcp://node00:5558")
+sender.connect("tcp://node00:7008")
 
 # Process tasks forever
 while True:

@@ -14,7 +14,7 @@ context = zmq.Context()
 
 # Socket to receive messages on
 receiver = context.socket(zmq.PULL)
-receiver.bind("tcp://*:5558")
+receiver.bind("tcp://*:7008")
 
 # Wait for start of batch
 s = receiver.recv()

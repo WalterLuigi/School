@@ -33,4 +33,4 @@ for line in lines:
 			print("No luck, skipping this address.")
 
 # Saves and prints out our map
-map.render('output/DNSmap.gv', view=True)
+map.render('output/DNSmap.gv')

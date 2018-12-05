@@ -1,0 +1,26 @@
+# IPython log file
+
+# Tue, 13 Nov 2018 22:09:14
+import ipaddress, netifaces, netaddr, hw2
+# Tue, 13 Nov 2018 22:09:28
+interfaces = hw2.get_interfaces()
+# Tue, 13 Nov 2018 22:09:33
+print(interfaces)
+# Tue, 13 Nov 2018 22:09:46
+interface = 'wlp2s0'
+# Tue, 13 Nov 2018 22:10:05
+hw2.get_mac(interface)
+#[Out]# 'a0:a8:cd:82:83:d'
+# Tue, 13 Nov 2018 22:10:11
+hw2.get_ips(interface)
+#[Out]# {'v4': IPv4Address('10.0.0.10'),
+#[Out]#  'v6': IPv6Address('2601:3c7:8201:3aa0:600b:d309:ac54:897e')}
+# Tue, 13 Nov 2018 22:10:26
+hw2.get_netmask(interface)
+#[Out]# {'v4': IPv4Address('255.255.255.0'),
+#[Out]#  'v6': IPv6Address('ffff:ffff:ffff:ffff::')}
+# Tue, 13 Nov 2018 22:14:17
+hw2.get_network(interface)
+#[Out]# {'v4': IPNetwork('10.0.0.10/32'), 'v6': IPNetwork('2601:3c7:8201:3aa0::/64')}
+# Tue, 13 Nov 2018 22:14:56
+get_ipython().run_line_magic('logstop', '')
